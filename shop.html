@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sneakershop.com</title>
+  <link rel="shortcut icon" type="image/x-icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/31326d426c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Kiatu Sneaker Shop</h1>
+    </header>
+    <nav>
+      <i class="fa-solid fa-bars" id="bars" onclick="showAside()"></i>
+      <i class="fa-solid fa-circle-user" id="user"  style="color: #ff0000;"></i>
+    </nav>
+    
+    <div id="aside">
+      <!--to see it set display to block-->
+    </div>
+    
+    <div id="srh-holder">
+      <input type="search" placeholder="Search here.......">
+      <button>search</button>
+    </div>
+    <div id="tag-holder">
+      <p id="tag">KICKS THAT KEEPS YOU BOUNCING</p>
+    </div>
+    <button id="next"><i class="fa-solid fa-arrow-down fa-bounce" style="color: #ff0000;"></i></button>
+  </div>
+  
+  <div id="top-container">
+    <h3>New arrival</h3>
+    <div id="commodity-card">
+      <img src="N4.jpg" alt="" id="color-img">
+      <div id="description">
+        <div id="shoe">
+          <h4>Type: <span>Sneaker</span></h4>
+          <h4>New Balance</h4>
+        </div>
+        <div class="opt">
+          <label for="size">Size: </label>
+          <input type="text" name="" id="size" value="24" readonly onclick="showOpt1()">
+          <span>
+            <div class="choice ch1">
+              <label for="s1">34:</label>
+              <input type="checkbox" name="sizeNo" id="s1">
+              <label for="s2">43:</label><input type="checkbox" name="sizeNo" id="s2">
+              <label for="s3">38:</label><input type="checkbox" name="sizeNo" id="s3">
+            </div>
+          </span>
+        </div>
+        <div class="opt">
+          <label for="color">Color: </label>
+          <input type="text" name="shoe-color" id="color" value="Customized" readonly onclick="showOpt2()"/>
+          <span>
+            <div class="choice ch2">
+              <label for="orange">Orange: </label>
+              <input type="checkbox" name="color" id="orange"><br>
+              <label for="black">Black: </label>
+              <input type="checkbox" name="color" id="black">
+              <label for="maroon">Maroon: </label>
+              <input type="checkbox" name="color" id="maroon">
+            </div>
+          </span>
+        </div>
+        <p><b>Price: </b><span id="sp">Ksh 1200</span><span id="dicount"></span></p>
+        <button class="cta"><b>Add to cart</b><i class="fa-solid fa-cart-plus fa-shake"></i></button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="mid-container">
+    <h3 id="man">Men shoes</h3>
+    <div id="sport-shoes">
+      <div class="card">
+        <img src="T1.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="S2.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="T4.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="S6.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+    </div>
+    
+        <h3 id="woman">Women shoes</h3>
+    <div id="sport-shoes">
+      <div class="card">
+        <img src="W1.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="W2.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="W3.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="W4.jpg" alt="">
+        <p class="desc">Add to cart<br><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+    </div>
+    
+        <h3 id="kid">Kids shoes</h3>
+    <div id="sport-shoes">
+      <div class="card">
+        <img src="K1.jpg" alt="">
+        <p class="desc"><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="K2.jpg" alt="">
+        <p class="desc"><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="K3.jpg" alt="">
+        <p class="desc"><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+      <div class="card">
+        <img src="K4.jpg" alt="">
+        <p class="desc"><i class="fa-solid fa-cart-plus fa-shake"></i></p>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+    <div id="help">
+      <a href="">Don't know which shoe to buy?</a>
+      <a href="">Help?</a>
+      <a href="">Support</a>
+      <a href="">FQA</a>
+    </div>
+    <div id="socials">
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-pinterest"></i>
+    </div>
+   <h4>Developer: <a href="https://github.com/ Hiwson">UliDev</a></h4>
+   <h4>kiatu stores 2025<sup>&copy</sup></h4>
+  </footer>
+  <script>
+let bar = document.getElementById('bars');
+let aside = document.getElementById('aside');
+function showAside(){
+  if(bar.classList.contains('fa-bars')){
+    aside.style.display = 'none';
+    window.alert('page still under development please be patient');
+    bar.classList.remove('fa-bars');
+    bar.classList.add('fa-xmark');
+  }
+  else{
+    aside.style.display = 'none';
+    bar.classList.remove('fa-xmark');
+    bar.classList.add('fa-bars');
+  }
+}  
+document.getElementById('user').onclick = () => {
+  alert('page still under development please bear with us');
+}
+  
+    const shoe = document.getElementById('color-img');
+    const color = document.getElementById('color');
+    const size = document.getElementById('size');
+    const choices = document.querySelectorAll('.choice');
+    
+    function showOpt1(){
+      if(choices[0].classList.contains('ch1')){
+        choices[0].style.display = 'block'
+      }
+    }
+    function showOpt2(){
+      if(choices[1].classList.contains('ch2')){
+        choices[1].style.display = 'block'
+      }
+    }
+    
+    let s1,s2,s3;
+    s1 = document.getElementById('s1');
+    s2 = document.getElementById('s2');
+    s3 = document.getElementById('s3');
+    size.style.width = '40px' ;
+    s1.onclick = function (){
+      if(s1.checked){
+        choices[0].style.display = 'none';
+        size.value = '34';
+        s2.checked = false;
+        s3.checked = false;
+      }
+    }
+    s2.onclick = function (){
+      if(s2.checked){
+        choices[0].style.display = 'none';
+        size.value = '43';
+        s1.checked = false;
+        s3.checked = false;
+      }
+    }
+    s3.onclick = function (){
+      if(s3.checked){
+        choices[0].style.display = 'none';
+        size.value = '38';
+        s1.checked = false;
+        s2.checked = false;
+      }
+    }
+    
+    let c1,c2,c3,c4;
+    c1 = document.getElementById('black');
+    c2 = document.getElementById('orange');
+    c3 = document.getElementById('maroon');
+    color.style.width = '90px';
+    c1.onclick = function (){
+      if(c1.checked){
+        document.getElementById('color-img').src = 'N7.jpg';
+        choices[1].style.display = 'none';
+        color.value = 'black';
+        c2.checked = false;
+        c3.checked = false;
+      }
+    }
+    c2.onclick = function (){
+      if(c2.checked){
+        document.getElementById('color-img').src = 'N3.jpg';
+        choices[1].style.display = 'none';
+        color.value = 'orange';
+        c1.checked = false;
+        c3.checked = false;
+      }
+    }
+    c3.onclick = function (){
+      if(c3.checked){
+        document.getElementById('color-img').src = 'N6.jpg';
+        choices[1].style.display = 'none';
+        color.value = 'maroon';
+        //color.style.backgroundColor = 'maroon';
+        c1.checked = false;
+        c2.checked = false;
+      }
+    }
+    //document.getElementById('commodity-card').onmouseover = () => {choices[1].style.display = 'none'; choices[0].style.display = 'none';}
+    let next =document.getElementById('next');
+    next.onclick = function (){
+      window.location.href = '#commodity-card';
+    }
+    
+  </script>
+</body>
+
+</html>

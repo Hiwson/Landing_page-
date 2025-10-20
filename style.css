@@ -1,0 +1,224 @@
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    #container {
+      background-image: url("Bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95vh;
+      backdrop-filter: brightness(70%);
+      display: absolute;
+    }
+    
+    h1 {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 7;
+    }
+    
+    #aside{
+      width: 100%;
+      height: 20vh;
+      background: red;
+      z-index:6;
+      position: relative;
+      top: 0px;
+      display: none;
+    }
+
+    #tag-holder {
+      display: grid;
+      margin-top: 50px;
+    }
+    
+    #tag {
+      color: crimson;
+      padding: 20px;
+      font-size: 45px;
+      text-align: center;
+      margin-top: 10vh;
+      font-weight: 800;
+    }
+    
+    #srh-holder {
+      padding: 5px;
+      border: 2px solid red;
+      margin-top: 10px;
+      border-radius: 15px;
+      height: 40px;
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      justify-self: center;
+      background-color: #fff;
+      position: relative;
+      top: 10px ;
+    }
+    
+    #srh-holder input {
+      width: 80%;
+      outline: none;
+      border: none;
+      background-color: rgba(198, 62, 62, 0.3);
+      color: #000;
+    }
+    
+    #top-container {
+      display: grid;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    
+    h3 {
+      text-align: center;
+      border-bottom: 2px solid crimson;
+      width: 150px;
+      justify-self: center;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    #next{
+      position:relative;
+      left:45vw;
+      top: 32vh;
+      width:50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1.5px solid crimson;
+      background: transparent;
+      backdrop-filter: blur(5px);
+    }
+    i{
+      font-size: 25px;
+    }
+    #commodity-card {
+      width: 300px;
+      height: 590px;
+      margin-top: 20px;
+      border: 1.5px solid rgba(104, 105, 115, 1);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      margin-bottom: 50px;
+      box-shadow: 13px 5px 15px rgba(176, 176, 176, 1);
+      /*transition: width 2s,transform 2.4s;*/
+    }
+    
+    /*
+    #commodity-card:hover{
+      width: 320px ;
+      transform: scale(0.95,0.95);
+    } 
+    */
+    #commodity-card img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    
+    #description {
+      padding: 10px;
+      display: grid;
+      row-gap: 3px;
+    }
+    
+    .opt {
+      display: flex;
+      gap: 10px;
+      padding: 5px;
+      position: relative;
+    }
+    .opt input{
+      outline: none;
+    }
+    #shoe {
+      display: flex;
+      justify-content: space-between;
+    }
+    .cta {
+      padding: 5px;
+      display: flex;
+      gap: 10px;
+      justify-content:center;
+    }
+    .cta i{font-size: 18px;}
+    .choice {
+      width: 100px;
+      border: 0.5px solid grey;
+      padding: 5px;
+      position: absolute;
+      left: 85px;
+      top: 17px;
+      background: #fff;
+      z-index: 5;
+      display: none;
+    }
+    .ch1{width: 50px;}
+    
+    li {
+      list-style-type: none;
+    }
+    
+    #mid-container{
+      display: grid ;
+      /*border:2px solid yellow;*/
+      padding: 10px;
+    }
+    #sport-shoes{
+      /*border :2px solid green;*/
+      display: grid;
+      grid-template-columns:45% 45%;
+      grid-template-rows: auto auto;
+      justify-content: space-between;
+      gap:10px ;
+      padding: 2px;
+      width: 90%;
+      justify-self: center;
+      margin-top: 20px;
+      margin-bottom :30px;
+    }
+    .card{
+      /*border: 2px solid red;*/
+height: 200px ;
+padding:1px;
+position: relative;
+    }
+    .card img{
+      width: 100%;
+      height: 190px;
+      border-radius:8px;
+    }
+    .card:not(:hover){
+      filter: brightness(90%);
+      .desc{display:none;}
+    }
+    .desc{
+      position: absolute;
+      color: crimson;
+      left: 10px;
+      bottom: 20px;
+      background: rgba(178, 183, 235, 0.2);
+      padding:2px;
+      border-radius:2px;
+backdrop-filter: blur(10px);
+    }
+    
+    @media screen and (min-width:580px){
+      body{
+        display: none;
+      }
+    }
