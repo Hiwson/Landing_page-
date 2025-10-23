@@ -25,7 +25,7 @@
     </div>
     
     <div id="srh-holder">
-      <input type="search" placeholder="Search here.......">
+      <input type="search" placeholder="Search for your favourite shoe here.......">
       <button>search</button>
     </div>
     <div id="tag-holder">
@@ -36,41 +36,117 @@
   
   <div id="top-container">
     <h3>New arrival</h3>
-    <div id="commodity-card">
-      <img src="N4.jpg" alt="" id="color-img">
-      <div id="description">
-        <div id="shoe">
-          <h4>Type: <span>Sneaker</span></h4>
-          <h4>New Balance</h4>
+    <div id="topin-container">
+      <div id="commodity-card">
+        <img src="N4.jpg" alt="" id="color-img">
+        <div id="description">
+          <div id="shoe">
+            <h4>Type: <span>Sneaker</span></h4>
+            <h4>New Balance</h4>
+          </div>
+          <div class="opt">
+            <label for="size">Size: </label>
+            <input type="text" name="" id="size" value="24" readonly onclick="showOpt1()">
+            <span>
+              <div class="choice ch1">
+                <label for="s1">34:</label>
+                <input type="checkbox" name="sizeNo" id="s1">
+                <label for="s2">43:</label><input type="checkbox" name="sizeNo" id="s2">
+                <label for="s3">38:</label><input type="checkbox" name="sizeNo" id="s3">
+              </div>
+            </span>
+          </div>
+          <div class="opt">
+            <label for="color">Color: </label>
+            <input type="text" name="shoe-color" id="color" value="Customized" readonly onclick="showOpt2()"/>
+            <span>
+              <div class="choice ch2">
+                <label for="orange">Orange: </label>
+                <input type="checkbox" name="color" id="orange"><br>
+                <label for="black">Black: </label>
+                <input type="checkbox" name="color" id="black">
+                <label for="maroon">Maroon: </label>
+                <input type="checkbox" name="color" id="maroon">
+              </div>
+            </span>
+          </div>
+          <p><b>Price: </b><span id="sp">Ksh 1200</span><span id="dicount"></span></p>
+          <button class="cta"><b>Add to cart</b><i class="fa-solid fa-cart-plus fa-shake"></i></button>
         </div>
-        <div class="opt">
-          <label for="size">Size: </label>
-          <input type="text" name="" id="size" value="24" readonly onclick="showOpt1()">
-          <span>
-            <div class="choice ch1">
-              <label for="s1">34:</label>
-              <input type="checkbox" name="sizeNo" id="s1">
-              <label for="s2">43:</label><input type="checkbox" name="sizeNo" id="s2">
-              <label for="s3">38:</label><input type="checkbox" name="sizeNo" id="s3">
-            </div>
-          </span>
+      </div>
+      <div id="commodity-card">
+        <img src="T4.jpg" alt="" id="color-img">
+        <div id="description">
+          <div id="shoe">
+            <h4>Type: <span>Sneaker</span></h4>
+            <h4>New Balance</h4>
+          </div>
+          <div class="opt">
+            <label for="size">Size: </label>
+            <input type="text" name="" id="size" value="24" readonly onclick="showOpt1()">
+            <span>
+              <div class="choice ch1">
+                <label for="s1">34:</label>
+                <input type="checkbox" name="sizeNo" id="s1">
+                <label for="s2">43:</label><input type="checkbox" name="sizeNo" id="s2">
+                <label for="s3">38:</label><input type="checkbox" name="sizeNo" id="s3">
+              </div>
+            </span>
+          </div>
+          <div class="opt">
+            <label for="color">Color: </label>
+            <input type="text" name="shoe-color" id="color" value="Customized" readonly onclick="showOpt2()"/>
+            <span>
+              <div class="choice ch2">
+                <label for="orange">Orange: </label>
+                <input type="checkbox" name="color" id="orange"><br>
+                <label for="black">Black: </label>
+                <input type="checkbox" name="color" id="black">
+                <label for="maroon">Maroon: </label>
+                <input type="checkbox" name="color" id="maroon">
+              </div>
+            </span>
+          </div>
+          <p><b>Price: </b><span id="sp">Ksh 1200</span><span id="dicount"></span></p>
+          <button class="cta"><b>Add to cart</b><i class="fa-solid fa-cart-plus fa-shake"></i></button>
         </div>
-        <div class="opt">
-          <label for="color">Color: </label>
-          <input type="text" name="shoe-color" id="color" value="Customized" readonly onclick="showOpt2()"/>
-          <span>
-            <div class="choice ch2">
-              <label for="orange">Orange: </label>
-              <input type="checkbox" name="color" id="orange"><br>
-              <label for="black">Black: </label>
-              <input type="checkbox" name="color" id="black">
-              <label for="maroon">Maroon: </label>
-              <input type="checkbox" name="color" id="maroon">
-            </div>
-          </span>
+      </div>
+      <div id="commodity-card">
+        <img src="J7.jpg" alt="" id="color-img">
+        <div id="description">
+          <div id="shoe">
+            <h4>Type: <span>Sneaker</span></h4>
+            <h4>New Balance</h4>
+          </div>
+          <div class="opt">
+            <label for="size">Size: </label>
+            <input type="text" name="" id="size" value="24" readonly onclick="showOpt1()">
+            <span>
+              <div class="choice ch1">
+                <label for="s1">34:</label>
+                <input type="checkbox" name="sizeNo" id="s1">
+                <label for="s2">43:</label><input type="checkbox" name="sizeNo" id="s2">
+                <label for="s3">38:</label><input type="checkbox" name="sizeNo" id="s3">
+              </div>
+            </span>
+          </div>
+          <div class="opt">
+            <label for="color">Color: </label>
+            <input type="text" name="shoe-color" id="color" value="Customized" readonly onclick="showOpt2()"/>
+            <span>
+              <div class="choice ch2">
+                <label for="orange">Orange: </label>
+                <input type="checkbox" name="color" id="orange"><br>
+                <label for="black">Black: </label>
+                <input type="checkbox" name="color" id="black">
+                <label for="maroon">Maroon: </label>
+                <input type="checkbox" name="color" id="maroon">
+              </div>
+            </span>
+          </div>
+          <p><b>Price: </b><span id="sp">Ksh 1200</span><span id="dicount"></span></p>
+          <button class="cta"><b>Add to cart</b><i class="fa-solid fa-cart-plus fa-shake"></i></button>
         </div>
-        <p><b>Price: </b><span id="sp">Ksh 1200</span><span id="dicount"></span></p>
-        <button class="cta"><b>Add to cart</b><i class="fa-solid fa-cart-plus fa-shake"></i></button>
       </div>
     </div>
   </div>

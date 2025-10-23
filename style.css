@@ -10,7 +10,7 @@
       background-image: url("Bg.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      height: 95vh;
+      height: 100vh;
       backdrop-filter: brightness(70%);
       display: absolute;
     }
@@ -218,7 +218,52 @@ backdrop-filter: blur(10px);
     }
     
     @media screen and (min-width:580px){
-      body{
-        display: none;
+      h1{
+        color: crimson;
+        font-size: 50px;
+        font-weight: 900;
       }
+      #container{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      #srh-holder{
+        width: 500px;
+        margin: auto;
+        background: transparent;
+        backdrop-filter: blur(10px);
+      }
+      #srh-holder input{
+        background:transparent ;
+      }
+      #srh-holder input::placeholder{
+        color: crimson;
+        font-weight: 800;
+      }
+      #tag-holder{
+        position: relative;
+        top: 15vh;
+      }
+      #tag{
+        background-color: rgba(60, 60, 231,0.4);
+        padding: 5px;
+        border-radius: 10px;
+        width: 650px;
+        margin: auto;
+        backdrop-filter: blur(5px);
+      }
+      #next{
+        top:45vh;
+      }
+      #top-container{
+        padding: 20px;
+      }
+      #topin-container{
+        display: flex;
+        gap: 35px;
+      }
+      #sport-shoes{
+        display: flex;
+      }
+
     }
