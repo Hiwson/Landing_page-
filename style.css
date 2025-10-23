@@ -218,7 +218,7 @@ position: relative;
       border-radius:2px;
 backdrop-filter: blur(10px);
     }
-    
+
     @media screen and (min-width:580px){
       h1{
         color: crimson;
@@ -290,7 +290,15 @@ backdrop-filter: blur(10px);
         padding: 30px;
         display: grid;
         gap: 20px;
-        background-color: #bbb3b3;
+        background-color: rgba(60, 60, 231,0.4);
+      }
+      #socials{
+        display: flex;
+        gap: 10px;
+      }
+      #socials i:hover{
+        color: crimson;
+        cursor: pointer;
       }
 
 
